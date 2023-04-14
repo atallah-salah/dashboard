@@ -1,4 +1,14 @@
 .dashborad {
   height: calc(100% - 64px);
   width: 100%;
+  background: url("../../assets/icons/gray-logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .sections-container {
+    padding: 40px;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
 }

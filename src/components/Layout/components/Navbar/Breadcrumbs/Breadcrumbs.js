@@ -4,7 +4,7 @@ import useMedia from "use-media";
 import styles from "./Breadcrumbs.module.scss";
 const Breadcrumbs = () => {
   const [paths, setPaths] = useState(["Main", "Visual pollution", "Enforcement Rate - Overview Page​ - All Country"]);
-  const hidePaths = useMedia({ minWidth: 960 });
+  const hidePaths = useMedia({ minWidth: 990 });
 
   return (
     <div className={styles.breadcrumbs}>

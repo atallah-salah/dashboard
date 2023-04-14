@@ -1,7 +1,9 @@
 @import "assets/scss/colors";
+@import "assets/scss/fonts";
 
 * {
   box-sizing: border-box;
+  font-family: "Roboto";
 }
 
 html,
@@ -11,7 +13,8 @@ body {
   background-color: $background-color;
 }
 
-p {
+p,
+h4 {
   margin: 0;
   padding: 0;
 }

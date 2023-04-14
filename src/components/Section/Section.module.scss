@@ -1,0 +1,18 @@
+@import "../../assets/scss/colors";
+
+.section {
+  .title {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 44px;
+    letter-spacing: -0.44px;
+    color: $text-color;
+    margin-bottom: 20px;
+  }
+  .container {
+    display: flex;
+    gap: 12px;
+  }
+}
