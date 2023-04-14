@@ -8,13 +8,11 @@
   position: relative;
   justify-content: space-between;
   align-items: center;
-  padding: 0 40px;
+  padding-inline: 40px;
 
+  .right,
   .left {
-    background-color: red;
-  }
-
-  .right {
-    background-color: blue;
+    display: flex;
+    align-items: center;
   }
 }

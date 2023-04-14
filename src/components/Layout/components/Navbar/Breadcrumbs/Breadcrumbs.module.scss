@@ -1,0 +1,61 @@
+@import "../../../../../assets/scss/colors";
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+
+  .menu-trigger {
+    margin-right: 32px;
+  }
+
+  > .title {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.15px;
+    color: $text-dark-color;
+    margin: 0 8px;
+    margin-right: 32px;
+    white-space: nowrap;
+  }
+
+  .paths {
+    list-style: none;
+    display: flex;
+    padding: 0;
+
+    .path {
+      display: flex;
+      align-items: center;
+
+      .separator {
+        margin: 0 8px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.44px;
+        color: $text-gray-color;
+      }
+
+      .title {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.44px;
+        color: $text-color;
+      }
+
+      &:last-child {
+        .title {
+          color: $text-gray-color;
+        }
+      }
+    }
+  }
+}

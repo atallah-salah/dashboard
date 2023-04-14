@@ -2,5 +2,14 @@
 
 .sidebar {
   width: 96px;
+  box-shadow: inset -1px 0px 0px #e5e5e5;
   background-color: $layout-background-color;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 0;
+
+  .logo {
+    height: 64px;
+    margin-bottom: 32px;
+  }
 }

@@ -1,0 +1,17 @@
+.container {
+  height: 21px;
+  .has-notification {
+    position: relative;
+    &::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      height: 5.25px;
+      width: 5.25px;
+      background-color: red;
+      border-radius: 50%;
+      box-shadow: 0 0 0px 2px white;
+    }
+  }
+}
