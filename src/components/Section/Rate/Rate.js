@@ -1,13 +1,24 @@
 import styles from "./Rate.module.scss";
-import { CircularProgressbar } from "react-circular-progressbar";
+import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
-const Rate = ({ value, text, change, date }) => {
+const Rate = ({ value, text, change, date, pathColor }) => {
   return (
     <div className={styles.rate}>
       <div className={styles.container}>
         <div style={{ width: 80 }}>
-          <CircularProgressbar value={value} text={`${value}%`} />
+          <CircularProgressbar
+            value={value}
+            text={`${value}%`}
+            styles={buildStyles({
+              strokeLinecap: "round",
+              textSize: "30px",
+              pathTransitionDuration: 0.5,
+              pathColor: change ? pathColor : `#23A698`,
+              textColor: "#383874",
+              trailColor: "#DBDFF1",
+            })}
+          />
         </div>
         <div className={styles.info}>
           <p className={styles.title}>{text}</p>

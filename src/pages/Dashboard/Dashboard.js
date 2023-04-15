@@ -1,3 +1,4 @@
+import { useMedia } from "use-media";
 import Map from "../../components/Map/Map";
 import Section from "../../components/Section/Section";
 import Table from "../../components/Table/Table";
@@ -6,6 +7,8 @@ import { useSelector } from "react-redux";
 // import { setState, updateState } from "../../redux/slices/generalSlice.js";
 
 const Dashborad = () => {
+  const columnDisplay = useMedia({ minWidth: 1050 });
+
   const { regulationEnforcement, coverage, resolution } = useSelector((state) => state.general);
 
   return (
@@ -16,7 +19,7 @@ const Dashborad = () => {
         <Section title={"Resolution rate"} data={resolution} />
       </div>
 
-      <div className={styles.info}>
+      <div className={[styles.info, !columnDisplay ? styles["info-column"] : ""].join(" ")}>
         <Map />
         <Table />
       </div>

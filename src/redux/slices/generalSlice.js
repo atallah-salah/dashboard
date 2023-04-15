@@ -8,6 +8,7 @@ const initialState = {
     currentDate: "1 Week",
     targetDate: "6 Month",
     chart: "chart1",
+    pathColor: "#416BFF",
   },
   coverage: {
     current: 25,
@@ -16,6 +17,7 @@ const initialState = {
     currentDate: "1 Week",
     targetDate: "6 Month",
     chart: "chart2",
+    pathColor: "#FA6298",
   },
   resolution: {
     current: 38,
@@ -24,6 +26,7 @@ const initialState = {
     currentDate: "1 Week",
     targetDate: "6 Month",
     chart: "chart3",
+    pathColor: "#FFBA69",
   },
 };
 
