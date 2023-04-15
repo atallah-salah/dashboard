@@ -37,5 +37,25 @@
       mix-blend-mode: normal;
       opacity: 0.6;
     }
+
+    .change {
+      .text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.44px;
+        margin-left: 2px;
+
+        &.up {
+          color: $change-up-color;
+        }
+
+        &.down {
+          color: $change-down-color;
+        }
+      }
+    }
   }
 }

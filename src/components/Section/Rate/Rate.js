@@ -12,6 +12,14 @@ const Rate = ({ value, text, change, date }) => {
         <div className={styles.info}>
           <p className={styles.title}>{text}</p>
           <p className={styles.desc}>{date}</p>
+          {Boolean(change) && (
+            <div className={styles.change}>
+              <img alt="arrow" src={`assets/icons/arrow-${change > 0 ? "up" : "down"}.svg`} />
+              <span className={[styles.text, change > 0 ? styles.up : styles.down].join(" ")}>
+                {change > 0 ? "+" : "-"} {Math.abs(change)}%
+              </span>
+            </div>
+          )}
         </div>
       </div>
     </div>
