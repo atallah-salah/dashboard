@@ -4,6 +4,9 @@
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
+    "@syncfusion/ej2-maps": "^21.1.38",
+    "@syncfusion/ej2-react-grids": "^21.1.39",
+    "@syncfusion/ej2-react-maps": "^21.1.38",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",

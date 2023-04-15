@@ -1,3 +1,4 @@
+import Map from "../../components/Map/Map";
 import Section from "../../components/Section/Section";
 import styles from "./Dashboard.module.scss";
 import { useSelector } from "react-redux";
@@ -12,6 +13,10 @@ const Dashborad = () => {
         <Section title={"Regulation enforcement rate"} data={regulationEnforcement} />
         <Section title={"Coverage rate"} data={coverage} />
         <Section title={"Resolution rate"} data={resolution} />
+      </div>
+
+      <div className={styles["sections-container"]}>
+        <Map />
       </div>
     </div>
   );
