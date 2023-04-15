@@ -7,6 +7,7 @@ const initialState = {
     change: 10,
     currentDate: "1 Week",
     targetDate: "6 Month",
+    chart: "chart1",
   },
   coverage: {
     current: 25,
@@ -14,6 +15,7 @@ const initialState = {
     change: -10,
     currentDate: "1 Week",
     targetDate: "6 Month",
+    chart: "chart2",
   },
   resolution: {
     current: 38,
@@ -21,6 +23,7 @@ const initialState = {
     change: 10,
     currentDate: "1 Week",
     targetDate: "6 Month",
+    chart: "chart3",
   },
 };
 

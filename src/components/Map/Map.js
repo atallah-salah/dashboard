@@ -1,26 +1,25 @@
 import styles from "./Map.module.scss";
 import { MapAjax } from "@syncfusion/ej2-maps";
 import { MapsComponent, Inject, LayersDirective, LayerDirective, Zoom } from "@syncfusion/ej2-react-maps";
+import { registerLicense } from "@syncfusion/ej2-base";
+import { mapKey } from "./map-key";
 
-const maps_style = `
+registerLicense(mapKey);
+
+const map_style = `
 #maps_MapBorder, #maps_MapAreaBorder {
   fill: #eef1fa;
 }
 `;
 
-function MultilayerMaps() {
-  function onMapsLoad(args) {
-    let maps = document.getElementById("maps");
-    maps.setAttribute("title", "");
-  }
+const MultilayerMaps = () => {
   return (
     <div className="control-pane">
-      <style>{maps_style}</style>
+      <style>{map_style}</style>
       <div className="control-section row">
         <div className="col-md-12">
           <MapsComponent
             id="maps"
-            loaded={onMapsLoad.bind(this)}
             zoomSettings={{
               enable: true,
               pinchZooming: true,
@@ -44,7 +43,7 @@ function MultilayerMaps() {
       </div>
     </div>
   );
-}
+};
 
 const Map = () => {
   return (

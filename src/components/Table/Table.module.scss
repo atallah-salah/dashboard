@@ -1,0 +1,55 @@
+@import "../../assets/scss/colors";
+
+.table {
+  margin-top: 64px;
+
+  .container {
+    padding: 20px;
+    background-color: white;
+    min-height: 484px;
+
+    box-shadow: 0px 100px 80px rgba(108, 73, 172, 0.07), 0px 41.7776px 33.4221px rgba(108, 73, 172, 0.0503198), 0px 22.3363px 17.869px rgba(108, 73, 172, 0.0417275),
+      0px 12.5216px 10.0172px rgba(108, 73, 172, 0.035), 0px 6.6501px 5.32008px rgba(108, 73, 172, 0.0282725), 0px 2.76726px 2.21381px rgba(108, 73, 172, 0.0196802);
+    border-radius: 10px;
+    padding: 20px;
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    .raw {
+      display: flex;
+      align-items: center;
+      img {
+        margin-right: 10px;
+      }
+    }
+
+    th,
+    td {
+      text-align: left;
+      font-family: "Roboto";
+      font-style: normal;
+      color: $text-color;
+      line-height: 16px;
+      padding: 18px 0;
+      padding-right: 27px;
+      border-bottom: 1px solid #dbdff1;
+    }
+
+    th {
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    td {
+      font-weight: 400;
+      font-size: 14px;
+      letter-spacing: 0.4px;
+      white-space: break-spaces;
+    }
+  }
+}

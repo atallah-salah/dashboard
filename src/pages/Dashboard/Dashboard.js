@@ -1,5 +1,6 @@
 import Map from "../../components/Map/Map";
 import Section from "../../components/Section/Section";
+import Table from "../../components/Table/Table";
 import styles from "./Dashboard.module.scss";
 import { useSelector } from "react-redux";
 // import { setState, updateState } from "../../redux/slices/generalSlice.js";
@@ -15,8 +16,9 @@ const Dashborad = () => {
         <Section title={"Resolution rate"} data={resolution} />
       </div>
 
-      <div className={styles["sections-container"]}>
+      <div className={styles.info}>
         <Map />
+        <Table />
       </div>
     </div>
   );
