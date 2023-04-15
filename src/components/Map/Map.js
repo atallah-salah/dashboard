@@ -13,6 +13,8 @@ const map_style = `
 `;
 
 const MultilayerMaps = () => {
+  let cites = [{ name: "Northern Region" }, { name: "Qassim" }, { name: "Tabuk" }, { name: "Hail" }, { name: "Madinah" }, { name: "Jizan" }, { name: "Asir" }, { name: "Najran" }, { name: "Bahah" }];
+
   return (
     <div className="control-pane">
       <style>{map_style}</style>
@@ -28,6 +30,7 @@ const MultilayerMaps = () => {
             <Inject services={[Zoom]} />
             <LayersDirective>
               <LayerDirective
+                dataSource={cites}
                 shapeData={new MapAjax("https://raw.githubusercontent.com/wjdanalharthi/GeoJSON-of-Saudi-Arabia-Regions/master/data/SA_regions.json")}
                 shapeSettings={{
                   fill: "#DBDFF1",
@@ -35,6 +38,45 @@ const MultilayerMaps = () => {
                     color: "white",
                     width: 1,
                   },
+                  colorMapping: [
+                    {
+                      value: "Qassim",
+                      color: "#416BFF",
+                    },
+                    {
+                      value: "Northern Region",
+                      color: "#FF708B",
+                    },
+                    {
+                      value: "Tabuk",
+                      color: "#416BFF",
+                    },
+                    {
+                      value: "Hail",
+                      color: "#23A698",
+                    },
+                    {
+                      value: "Madinah",
+                      color: "#FFBA69",
+                    },
+                    {
+                      value: "Jizan",
+                      color: "#FFBA69",
+                    },
+                    {
+                      value: "Asir",
+                      color: "#23A698",
+                    },
+                    {
+                      value: "Najran",
+                      color: "#FF708B",
+                    },
+                    {
+                      value: "Bahah",
+                      color: "#FFBA69",
+                    },
+                  ],
+                  colorValuePath: "name",
                 }}
               ></LayerDirective>
             </LayersDirective>
