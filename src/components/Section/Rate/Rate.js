@@ -2,7 +2,7 @@ import styles from "./Rate.module.scss";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
-const Rate = ({ value, text, change }) => {
+const Rate = ({ value, text, change, date }) => {
   return (
     <div className={styles.rate}>
       <div className={styles.container}>
@@ -11,7 +11,7 @@ const Rate = ({ value, text, change }) => {
         </div>
         <div className={styles.info}>
           <p className={styles.title}>{text}</p>
-          <p className={styles.desc}> ( 1 week ) </p>
+          <p className={styles.desc}>{date}</p>
         </div>
       </div>
     </div>
