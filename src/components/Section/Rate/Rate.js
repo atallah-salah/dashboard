@@ -2,7 +2,7 @@ import styles from "./Rate.module.scss";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
-const Rate = ({ value, text }) => {
+const Rate = ({ value, text, change }) => {
   return (
     <div className={styles.rate}>
       <div className={styles.container}>
